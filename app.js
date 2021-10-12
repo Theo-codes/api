@@ -11,16 +11,16 @@ app.get('/', (req, res) =>{
     res.send("Hello World!")
 });
 
-// app.get('/students', (req, res) =>{
-//     res.send("Students")
-// });
+app.get('/students', (req, res) =>{
+    res.send("Students")
+});
 
-app.get('/students', (req, res) => {
-    Students.find()
-   .then(result => {
-   res.send(result)
-   })
-   })
+// app.get('/students', (req, res) => {
+//     Students.find()
+//    .then(result => {
+//    res.send(result)
+//    })
+//    })
 
 const connectDB = require('./config/db');
 const { connect } = require('mongoose');
