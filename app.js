@@ -26,4 +26,4 @@ connectDB();
 //Routes
 app.use('/', require('./routes/index'));
 
-app.listen(8080);
+app.listen(process.env.PORT || 3000);
